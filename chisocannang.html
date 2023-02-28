@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chisocannang</title>
+</head>
+<body>
+<form>
+<h3>Bảng chỉ số BMI</h3>
+    <p id="weight">chỉ số chiều cao:<input type="text"></p>
+    <p id="height">chỉ số cân nang:<input type="text"></p>
+    <input type="button" onclick="kiemtra()" value="kiemtra">
+</form>
+</body>
+<script>
+    function kiemtra() {
+        let a = document.getElementById("weight");
+        let b = document.getElementById("height");
+        let c = a/(b*b);
+        if (c < 18){
+            document.write("Underweight");
+        }else if (c < 25 ) {
+            document.write("Normal");
+        }else if (c < 30 ) {
+            document.write("Overweight");
+        }else {
+            document.write("Obese");
+        }
+    }
+
+
+
+
+
+
+
+
+
+</script>
+</html>
